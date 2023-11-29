@@ -26,7 +26,7 @@ steps:
           path: world.txt
 
     # delete-artifact
-    - uses: architactaj/delete-artifact@v2
+    - uses: architactaj/delete-artifact@v1
       with:
           name: my-artifact
 ```
@@ -35,7 +35,7 @@ steps:
 
 ```yml
 steps:
-    - uses: architactaj/delete-artifact@v2
+    - uses: architactaj/delete-artifact@v1
       with:
           name: |
               artifact-*
@@ -49,7 +49,7 @@ By default, the action will fail when it was not possible to delete an artifact 
 
 ```yml
 steps:
-    - uses: architactaj/delete-artifact@v2
+    - uses: architactaj/delete-artifact@v1
       with:
           name: okay-to-keep
           failOnError: false

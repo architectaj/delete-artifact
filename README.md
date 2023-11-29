@@ -1,5 +1,5 @@
-![CI](https://github.com/GeekyEggo/delete-artifact/workflows/CI/badge.svg)
-![Example](https://github.com/GeekyEggo/delete-artifact/workflows/Example/badge.svg)
+![CI](https://github.com/architactaj/delete-artifact/workflows/CI/badge.svg)
+![Example](https://github.com/architactaj/delete-artifact/workflows/Example/badge.svg)
 
 # Delete artifacts
 
@@ -26,7 +26,7 @@ steps:
           path: world.txt
 
     # delete-artifact
-    - uses: geekyeggo/delete-artifact@v2
+    - uses: architactaj/delete-artifact@v2
       with:
           name: my-artifact
 ```
@@ -35,7 +35,7 @@ steps:
 
 ```yml
 steps:
-    - uses: geekyeggo/delete-artifact@v2
+    - uses: architactaj/delete-artifact@v2
       with:
           name: |
               artifact-*
@@ -49,7 +49,7 @@ By default, the action will fail when it was not possible to delete an artifact 
 
 ```yml
 steps:
-    - uses: geekyeggo/delete-artifact@v2
+    - uses: architactaj/delete-artifact@v2
       with:
           name: okay-to-keep
           failOnError: false
